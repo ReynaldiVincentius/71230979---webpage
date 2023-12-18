@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>@reynaldi - 71230979 - Personal Web Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="changedColorSection">
+            <h1>Hello!</h1>
+            <h1>I'm Reynaldi Vincentius Sebastian</h1>
+            <p>Welcome to my personal page, <br> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quisquam voluptatem, debitis perspiciatis aspernatur, aliquam provident delectus, non
+                animi reprehenderit at temporibus minus impedit fugiat? Aut!</p>
+
+            <h1>About Me</h1>
+            <div>
+                <div>
+                    <div class="imageContainer">
+                        <img src="foto/photo.jpg" alt="" class="profileImage">
+                    </div>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis cum dicta, blanditiis,
+                        temporibus,
+                        eligendi tempora perferendis delectus voluptas facere totam corporis quod quidem id tempore
+                        illum
+                        laboriosam maxime ipsam incidunt aliquam omnis in aut ex ipsa sint? Quasi, veniam ipsum! Atque
+                        voluptatum labore repudiandae. Numquam voluptates corporis amet, architecto modi sint aliquam,
+                        perferendis ipsum eum quis earum voluptas illum! Et cupiditate dolor, id provident vitae esse
+                        reprehenderit. Repellat optio saepe earum. Aut esse minima iure dolorem ut blanditiis obcaecati
+                        molestiae vitae dolores odio provident at quod natus voluptas quos doloribus exercitationem
+                        commodi,
+                        pariatur molestias voluptatem ab atque. Animi harum ipsam consequuntur. Tempora culpa a ipsam
+                        laboriosam! Expedita inventore non laboriosam quae consequuntur similique vero tenetur ipsum
+                        reprehenderit iure, dolores labore, suscipit nam cumque, maiores illum esse! Expedita, maiores?
+                        Reprehenderit, similique? Voluptatum, maxime illo, quidem eaque est placeat totam
+                        exercitationem,
+                        nesciunt cupiditate iusto magni inventore nemo.</p>
+
+                    <div class="row">
+                        <div class="col">
+                            <h3>My Skillset</h3>
+                            <ol>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>C</li>
+                                <li>Python</li>
+                            </ol>
+                        </div>
+                        <div class="col">
+                            <h3>Some Action u can do in this page</h3>
+                            <button id="changeColorButton">Click Me</button>
+                        </div>
+                        <div class="col">
+                            <h3>Additional Data</h3>
+                            <ul>
+                                <li>Instagram <a target="_blank"
+                                        href="https://instagram.com/rey.f.leight"><b>@rey.f.leight</b></a></li>
+                                <li>From Yogyakarta, Indonesia</li>
+                                <li>Currently studying at <a target="_blank" href="https://www.ukdw.ac.id/"><b>Duta
+                                            Wacana Christian University</b></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <h1>Thankyou for visiting my website.</h1>
+    </div>
+
+    <script>
+        const bodyElement = document.body;
+
+        function gantiWarnaRandom() {
+            const warnaList = ['red', 'green', 'blue', 'white'];
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            const target = document.getElementsByClassName("changedColorSection")
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna = document.getElementById('changeColorButton');
+        tombolGantiWarna.addEventListener('click', gantiWarnaRandom);
+    </script>
+</body>
+
+</html>
